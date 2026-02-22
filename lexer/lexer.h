@@ -17,11 +17,12 @@ typedef struct
 
 // Token Types 
 typedef enum {
-    TOKEN_INT , 
-    TOKEN_FLOAT , 
-    TOKEN_STRING , 
-    TOKEN_CHAR , 
-    TOKEN_INDENT, 
+
+    TOKEN_INT_LITERAL , 
+    TOKEN_FLOAT_LITERAL , 
+    TOKEN_STRING_LITERAL , 
+    TOKEN_CHAR_LITERAL , 
+    TOKEN_IDENT_LITERAL, 
 
 
     TOKEN_FN  , 
@@ -67,7 +68,7 @@ typedef enum {
     
     
     TOKEN_EQ,
-    TOKEN_NEW,
+    TOKEN_NEQ,
     TOKEN_LT,TOKEN_GT,
     TOKEN_LEQ,TOKEN_GEQ,
 
@@ -92,7 +93,7 @@ typedef enum {
     TOKEN_DOT,
     TOKEN_ARROW,
     TOKEN_FAT_ARROW,
-    TOKEN_DOUBLE_COLUMN,
+    TOKEN_DOUBLE_COLON,
 
     TOKEN_EOF,
     TOKEN_ERR,
